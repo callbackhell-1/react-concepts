@@ -1,6 +1,6 @@
 const heading = React.createElement(
   "h1",
-  { id: "heading" },
+  { id: "heading" , xyz:"abc"},
   "Hello world from React !"
 );
 
