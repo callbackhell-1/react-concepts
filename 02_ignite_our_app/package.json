@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/callbackhell-1/react-concepts/issues"
   },
-  "homepage": "https://github.com/callbackhell-1/react-concepts#readme"
+  "homepage": "https://github.com/callbackhell-1/react-concepts#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
 }
