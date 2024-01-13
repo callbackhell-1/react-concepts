@@ -37,15 +37,23 @@ const Footer = function () {
   );
 };
 
+const span = <span>This is span</span>;
+
+const title = (
+  <div>
+    {span}
+    <h1>This is another title </h1>
+  </div>
+);
 const number = 100;
 
 //functional components
 const HeadingComponent = () => (
   <div id="hero-heading">
     <Navbar />
+    {title}
     <h2>{number}</h2>
-    <h2>{number + 20}</h2>
-    <h2>{console.log(`Hello world`)}</h2>
+    {span}
     <Title />
     <Footer />
     <h1 id="heading">Hello from react functional component</h1>
