@@ -1,8 +1,10 @@
 {
-  "name": "02_ignite_our_app",
+  "name": "react-app",
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
