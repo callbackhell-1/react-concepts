@@ -37,10 +37,15 @@ const Footer = function () {
   );
 };
 
+const number = 100;
+
 //functional components
 const HeadingComponent = () => (
   <div id="hero-heading">
     <Navbar />
+    <h2>{number}</h2>
+    <h2>{number + 20}</h2>
+    <h2>{console.log(`Hello world`)}</h2>
     <Title />
     <Footer />
     <h1 id="heading">Hello from react functional component</h1>
