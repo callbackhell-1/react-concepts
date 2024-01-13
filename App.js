@@ -28,12 +28,21 @@ const Title = () => (
   </div>
 );
 
+//another component
+const Footer = function () {
+  return (
+    <div>
+      <h2>This is a footer</h2>
+    </div>
+  );
+};
+
 //functional components
 const HeadingComponent = () => (
   <div id="hero-heading">
-    {/* component composition  || render another component*/}
     <Navbar />
     <Title />
+    <Footer />
     <h1 id="heading">Hello from react functional component</h1>
   </div>
 );
