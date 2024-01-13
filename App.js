@@ -28,20 +28,9 @@ const Title = () => (
   </div>
 );
 
-//another component
-const Footer = function () {
-  return (
-    <div>
-      <h2>This is a footer</h2>
-    </div>
-  );
-};
-
-const span = <span>This is span</span>;
-
+//JSX
 const title = (
   <div>
-    {span}
     <h1>This is another title </h1>
   </div>
 );
@@ -52,10 +41,7 @@ const HeadingComponent = () => (
   <div id="hero-heading">
     <Navbar />
     {title}
-    <h2>{number}</h2>
-    {span}
     <Title />
-    <Footer />
     <h1 id="heading">Hello from react functional component</h1>
   </div>
 );
