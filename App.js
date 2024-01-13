@@ -9,15 +9,11 @@ const jsxHeading = (
 );
 
 //functional components
-// 1st way :
-const HeadingComponents = () => {
-  return <h1>Hello from 1st functional component</h1>;
-};
-
-// 2nd way :
-const HeadingComponents2 = () => (
-  <h1>Hello from 2nd react functionalcomponent</h1>
+const HeadingComponent = () => (
+  <div id="hero-heading">
+    <h1 id="heading">Hello from react functional component</h1>
+  </div>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(<HeadingComponent />);
