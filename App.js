@@ -14,7 +14,28 @@ import ReactDOM from "react-dom/client";
     - Address
     - contact us
  */
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://img.freepik.com/free-photo/delicious-indian-food-tray_23-2148723505.jpg?w=900&t=st=1705701049~exp=1705701649~hmac=93c91fbcdb9fe38d89490e46645d30b2ee1a3d569c0465a3284e3c9a08d828b6"
+        />
+      </div>
 
+      <div>
+        <div className="nav-items">
+          <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Cart</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent />);
+root.render(<Header />);
