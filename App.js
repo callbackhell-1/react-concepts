@@ -37,5 +37,35 @@ const Header = () => {
   );
 };
 
+const Body = () => {
+  return (
+    <div>
+      <div>
+        <form action="/">
+          <div>
+            <input typeof="text" placeholder="Search the restaurants" />
+          </div>
+          <div>
+            <button typeof="submit">Search</button>
+          </div>
+        </form>
+        <hr />
+      </div>
+      <div className="res-container">
+        {/* Restaurant card  */}
+      </div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Header />);
+root.render(<AppLayout />);
