@@ -42,9 +42,6 @@ const Header = () => {
   );
 };
 
-const styleCard = {
-  backgroundColor: "#f0f0f0",
-};
 
 const RestaurantCard = () => {
   return (
