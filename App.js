@@ -42,13 +42,16 @@ const Header = () => {
   );
 };
 
-const styleCard = {
-  backgroundColor: "#f0f0f0",
-};
+// const styleCard = ;
 
 const RestaurantCard = () => {
   return (
-    <div className="res-card" style={styleCard}>
+    <div
+      className="res-card"
+      style={{
+        backgroundColor: "#f0f0f0",
+      }}
+    >
       <h3>Meghna foods</h3>
     </div>
   );
