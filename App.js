@@ -9,6 +9,11 @@ import ReactDOM from "react-dom/client";
     - search input
        -restraunt container
           - restraunt card
+              - name of res
+              - img
+              - star rating
+              - ETA 
+              - cuisines
  * footer
     - Links
     - Address
@@ -37,22 +42,26 @@ const Header = () => {
   );
 };
 
+const styleCard = {
+  backgroundColor: "#f0f0f0",
+};
+
+const RestaurantCard = () => {
+  return (
+    <div className="res-card">
+      <h3>Meghna foods</h3>
+    </div>
+  );
+};
+
 const Body = () => {
   return (
-    <div>
+    <div className="body">
       <div>
-        <form action="/">
-          <div>
-            <input typeof="text" placeholder="Search the restaurants" />
-          </div>
-          <div>
-            <button typeof="submit">Search</button>
-          </div>
-        </form>
-        <hr />
-      </div>
-      <div className="res-container">
-        {/* Restaurant card  */}
+        <div className="search">search</div>
+        <div className="res-container">
+          <RestaurantCard />
+        </div>
       </div>
     </div>
   );
