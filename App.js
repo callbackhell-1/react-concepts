@@ -1929,21 +1929,30 @@ const resList = [
 
 const RestaurantCard = (props) => {
   const { resData } = props;
-  console.log(resData);
+
+  const {
+    cloudinaryImageId,
+    name,
+    cuisines,
+    avgRating,
+    deliveryTime,
+    costForTwo,
+  } = resData?.data;
+  
   return (
     <div className="res-card">
       <img
         className="res-logo"
         src={
           "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          resData.data.cloudinaryImageId
+          cloudinaryImageId
         }
       />
-      <h3>{resData.data.name}</h3>
-      <h4>{resData.data.cuisines.join(",")}</h4>
-      <h4>{resData.data.avgRating} star</h4>
-      <h4>{resData.data.deliveryTime} Minutes</h4>
-      <h4>₹ {resData.data.costForTwo / 100} for two</h4>
+      <h3>{name}</h3>
+      <h4>{cuisines.join(",")}</h4>
+      <h4>{avgRating} star</h4>
+      <h4>{deliveryTime} Minutes</h4>
+      <h4>₹ {costForTwo / 100} for two</h4>
     </div>
   );
 };
