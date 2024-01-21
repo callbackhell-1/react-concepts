@@ -1938,7 +1938,7 @@ const RestaurantCard = (props) => {
     deliveryTime,
     costForTwo,
   } = resData?.data;
-  
+
   return (
     <div className="res-card">
       <img
@@ -1963,10 +1963,15 @@ const Body = () => {
       <div>
         <div className="search">search</div>
         <div className="res-container">
-          <RestaurantCard resData={resList[0]} />
+          {resList.map((restaurant) => {
+            return (
+            <RestaurantCard resData={restaurant} />
+            )
+          })}
+          {/* <RestaurantCard resData={resList[0]} />
           <RestaurantCard resData={resList[1]} />
           <RestaurantCard resData={resList[2]} />
-          <RestaurantCard resData={resList[3]} />
+          <RestaurantCard resData={resList[3]} /> */}
         </div>
       </div>
     </div>
