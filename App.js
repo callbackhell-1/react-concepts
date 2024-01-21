@@ -43,15 +43,14 @@ const Header = () => {
 };
 
 const RestaurantCard = (props) => {
-  // console.log(props); -- prop is an object
   return (
     <div className="res-card">
       <img
         className="res-logo"
         src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/gt1qlbsgaklbzlg0olga"
       />
-      <h3>Domino's</h3>
-      <h4>Pizzas, Italian</h4>
+      <h3>{props.resName}</h3>
+      <h4>{props.cuisine}</h4>
       <h4>4.4 stars</h4>
       <h4>30 minutes</h4>
     </div>
