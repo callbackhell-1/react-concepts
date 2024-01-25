@@ -19,3 +19,23 @@
 - HTTPs
 - Tree Shaking - remove unused code
 - Different dev and prod bundles
+
+## Swiggy Restraunt
+
+ * Header
+    - logo 
+    - nav items
+ * body
+    - search input
+       -restaurant container
+          - restaurant card
+              - name of res
+              - img
+              - star rating
+              - ETA 
+              - cuisines
+ * footer
+    - Links
+    - Address
+    - contact us
+ 
