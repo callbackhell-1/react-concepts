@@ -4,7 +4,10 @@ const Body = () => {
   return (
     <div className="body">
       <div>
-        <div className="search">search</div>
+        {/* <div className="search">search</div> */}
+        <div className="filter">
+          <button className="filter-btn">Top rated restaurant</button>
+        </div>
         <div className="res-container">
           {resList.map((restaurant) => {
             return (
