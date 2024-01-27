@@ -1,10 +1,44 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockData";
+// import resList from "../utils/mockData";
 const Body = () => {
+  let listOfRestaurants = [
+    {
+      data: {
+        id: "334475",
+        name: "KFC",
+        cloudinaryImageId: "bdcd233971b7c81bf77e1fa4471280eb",
+        cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
+        costForTwo: 40000,
+        deliveryTime: 36,
+        avgRating: "3.8",
+      },
+    },
+    {
+      data: {
+        id: "334476",
+        name: "Domino",
+        cloudinaryImageId: "bdcd233971b7c81bf77e1fa4471280eb",
+        cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
+        costForTwo: 40000,
+        deliveryTime: 36,
+        avgRating: "4.8",
+      },
+    },
+    {
+      data: {
+        id: "334477",
+        name: "Pizza Hut",
+        cloudinaryImageId: "bdcd233971b7c81bf77e1fa4471280eb",
+        cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
+        costForTwo: 40000,
+        deliveryTime: 36,
+        avgRating: "4.2",
+      },
+    },
+  ];
   return (
     <div className="body">
       <div>
-        {/* <div className="search">search</div> */}
         <div className="filter">
           <button
             className="filter-btn"
@@ -16,7 +50,7 @@ const Body = () => {
           </button>
         </div>
         <div className="res-container">
-          {resList.map((restaurant) => {
+          {listOfRestaurants.map((restaurant) => {
             return (
               <RestaurantCard key={restaurant.data.id} resData={restaurant} />
             );
